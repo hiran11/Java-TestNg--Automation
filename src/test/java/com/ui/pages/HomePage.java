@@ -4,7 +4,10 @@ import org.openqa.selenium.By;
 
 import com.constants.Browser;
 import com.constants.Env;
+
+import static com.constants.Env.*;
 import com.utility.Browserutility;
+import com.utility.JSONUtility;
 import com.utility.PropertiesUtil;
 
 import static com.utility.PropertiesUtil.*;
@@ -17,9 +20,13 @@ public class HomePage extends Browserutility {
 
     public HomePage(Browser browserName) {
         super(browserName);
+        //******* direct calling
        // goToWebsite("https://www.saucedemo.com/");
+      //******* properties file calling 
        // goToWebsite(PropertiesUtil.readProperty(Env.QA,"URL"));
-        goToWebsite(PropertiesUtil.readProperty(Env.QA,"URL"));
+       // goToWebsite(PropertiesUtil.readProperty(Env.QA,"URL"));
+        //*************** JSON file calling
+        goToWebsite(JSONUtility.readJSON(Env.QA));
     }
 
 

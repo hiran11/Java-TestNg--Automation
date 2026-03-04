@@ -13,9 +13,9 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
-
 import com.constants.Browser;
 
+// used  for repeated  method , common methods
 public abstract class Browserutility {
 	
 	protected WebDriver driver;

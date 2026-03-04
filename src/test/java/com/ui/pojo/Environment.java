@@ -1,5 +1,6 @@
 package com.ui.pojo;
 
+// store the Keys url in the environment variable
 public class Environment {
 	
 	//for Json file
@@ -13,3 +14,4 @@ public class Environment {
 		this.url = url;
 	}
 }
+
