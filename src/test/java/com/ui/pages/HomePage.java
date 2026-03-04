@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import com.constants.Browser;
 import com.constants.Env;
 import com.utility.Browserutility;
+import com.utility.PropertiesUtil;
+
 import static com.utility.PropertiesUtil.*;
 
 public class HomePage extends Browserutility {
@@ -17,7 +19,7 @@ public class HomePage extends Browserutility {
         super(browserName);
        // goToWebsite("https://www.saucedemo.com/");
        // goToWebsite(PropertiesUtil.readProperty(Env.QA,"URL"));
-        goToWebsite(readProperty(Env.QA,"URL"));
+        goToWebsite(PropertiesUtil.readProperty(Env.QA,"URL"));
     }
 
 

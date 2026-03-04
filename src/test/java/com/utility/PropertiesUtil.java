@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import com.constants.Env;
 
+// read and access properties file
 public class PropertiesUtil {
 
 	public static String readProperty(Env env,String propertyName) {
