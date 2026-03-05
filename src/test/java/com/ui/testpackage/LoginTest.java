@@ -26,8 +26,18 @@ public class LoginTest {
      
 
     // *************** Login using Json file 
-	//@Test(description = "Verifies with Valid user, is able to login into the application ", groups = {"e2e","sanity"},
-	//		              dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginTestJsonDataProvider")
+	@Test(description = "Verifies with Valid user, is able to login into the application ", groups = {"e2e","sanity"},
+			              dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginTestJsonDataProvider")
+	
+	public void loginJsonTest(User user) {		
+		
+	      //  String webText = homePage.doLoginwith("standard_user", "secret_sauce").getWebText();
+	      //  Assert.assertEquals(webText,"Swag Labs");
+		        // data passed directly without Testdata json	
+			    //  assertEquals(homePage.doLoginwith("standard_user", "secret_sauce").getWebText(),"Swag Labs");
+			    assertEquals(homePage.doLoginwith(user.getUserName(),user.getPassword()).getWebText(),"Swag Labs");
+		 
+		}
 	
 	
     //*************** Login using CSV file
@@ -36,7 +46,7 @@ public class LoginTest {
     dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginTestCSVDataProvider")
 
 	//public void loginTest() {
-	public void loginTest(User user) {		
+	public void loginCSVTest(User user) {		
 		
       //  String webText = homePage.doLoginwith("standard_user", "secret_sauce").getWebText();
       //  Assert.assertEquals(webText,"Swag Labs");
