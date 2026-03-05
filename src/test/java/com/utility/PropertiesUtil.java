@@ -8,7 +8,7 @@ import java.util.Properties;
 
 import com.constants.Env;
 
-// read and access properties file
+// read and access properties file like QA properties file , UAT prop file , DEV properties file 
 public class PropertiesUtil {
 
 	public static String readProperty(Env env,String propertyName) {

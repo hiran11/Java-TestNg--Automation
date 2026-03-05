@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import static com.constants.Browser.* ;
 import com.ui.pages.HomePage;
+import com.ui.pojo.User;
 import com.utility.Browserutility;
 
 
@@ -23,15 +24,18 @@ public class LoginTest {
 		homePage = new HomePage(CHROME);
 		}
 
-	@Test(description = "Verifies with Valid user, is able to login into the application ", groups = {"e2e","sanity"})
+	@Test(description = "Verifies with Valid user, is able to login into the application ", groups = {"e2e","sanity"},
+			              dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginTestDataProvider")
 	
-	public void loginTest() {
+	//public void loginTest() {
+	public void loginTest(User user) {		
 		
       //  String webText = homePage.doLoginwith("standard_user", "secret_sauce").getWebText();
       //  Assert.assertEquals(webText,"Swag Labs");
-		assertEquals(homePage.doLoginwith("standard_user", "secret_sauce").getWebText(),"Swag Labs");
-	  
-
+	        // data passed directly without Testdata json	
+		    //  assertEquals(homePage.doLoginwith("standard_user", "secret_sauce").getWebText(),"Swag Labs");
+		    assertEquals(homePage.doLoginwith(user.getUserName(),user.getPassword()).getWebText(),"Swag Labs");
+	 
 	}
 
 }
