@@ -13,12 +13,14 @@ import com.google.gson.Gson;
 import com.ui.pojo.Config;
 import com.ui.pojo.TestData;
 import com.ui.pojo.User;
+import com.utility.CSVReaderUtility;
 
-// data read from JSON file 
+
 public class LoginDataProvider {
 	
-	@DataProvider(name = "LoginTestDataProvider") 
-	public Iterator<Object[]> loginDataProvider() throws FileNotFoundException {
+	// data read from JSON file 
+	@DataProvider(name = "LoginTestJsonDataProvider") 
+	public Iterator<Object[]> loginjsonDataProvider() throws FileNotFoundException {
 		
 		Gson gson = new Gson();
 		File testDatafile = new File(System.getProperty("user.dir")+"\\testData\\loginData.json");
@@ -39,5 +41,13 @@ public class LoginDataProvider {
 		return dataToReturn.iterator();
 		
 	}
+	
+	@DataProvider(name = "LoginTestCSVDataProvider")
+	public static Iterator<User> loginCSVDataProvider() {
+		
+		return CSVReaderUtility.readCSVFile("loginData.csv");
+		
+	}
+	
 
 }

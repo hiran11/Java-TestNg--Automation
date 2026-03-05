@@ -22,7 +22,7 @@ public static Iterator<User> readCSVFile(String fileName) {
 	File csvFile = new File (System.getProperty("user.dir")+("//testData//"+fileName));
 	FileReader fileReader = null;
 	CSVReader csvfileReader = null;
-	List<User> userList = new ArrayList<User>();
+	List<User> userList = null;
 	String[] line; 
 	
 	try {

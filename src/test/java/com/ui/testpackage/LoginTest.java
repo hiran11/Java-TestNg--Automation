@@ -23,10 +23,18 @@ public class LoginTest {
 	public void setup() {
 		homePage = new HomePage(CHROME);
 		}
+     
+
+    // *************** Login using Json file 
+	//@Test(description = "Verifies with Valid user, is able to login into the application ", groups = {"e2e","sanity"},
+	//		              dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginTestJsonDataProvider")
+	
+	
+    //*************** Login using CSV file
 
 	@Test(description = "Verifies with Valid user, is able to login into the application ", groups = {"e2e","sanity"},
-			              dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginTestDataProvider")
-	
+    dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginTestCSVDataProvider")
+
 	//public void loginTest() {
 	public void loginTest(User user) {		
 		
