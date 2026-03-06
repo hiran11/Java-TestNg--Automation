@@ -45,15 +45,21 @@ public class LoginTest {
 	@Test(description = "Verifies with Valid user, is able to login into the application ", groups = {"e2e","sanity"},
     dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginTestCSVDataProvider")
 
-	//public void loginTest() {
 	public void loginCSVTest(User user) {		
-		
-      //  String webText = homePage.doLoginwith("standard_user", "secret_sauce").getWebText();
-      //  Assert.assertEquals(webText,"Swag Labs");
-	        // data passed directly without Testdata json	
-		    //  assertEquals(homePage.doLoginwith("standard_user", "secret_sauce").getWebText(),"Swag Labs");
+	      
 		    assertEquals(homePage.doLoginwith(user.getUserName(),user.getPassword()).getWebText(),"Swag Labs");
 	 
 	}
+	
+	 //*************** Login using Excel file
+
+		@Test(description = "Verifies with Valid user, is able to login into the application ", groups = {"e2e","sanity"},
+	    dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider = "LoginTestExcelDataProvider")
+
+		public void loginExcelDataProvider(User user) {		
+		
+			    assertEquals(homePage.doLoginwith(user.getUserName(),user.getPassword()).getWebText(),"Swag Labs");
+		 
+		}
 
 }

@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-05T15:39:28 EST" name="Default suite" finished-at="2026-03-05T15:39:40 EST" duration-ms="12064">
+  <suite started-at="2026-03-06T12:03:19 EST" name="Default suite" finished-at="2026-03-06T12:03:31 EST" duration-ms="11374">
     <groups>
       <group name="sanity">
-        <method signature="LoginTest.loginTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@59505b48]" name="loginTest" class="com.ui.testpackage.LoginTest"/>
+        <method signature="LoginTest.loginExcelDataProvider(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" name="loginExcelDataProvider" class="com.ui.testpackage.LoginTest"/>
       </group> <!-- sanity -->
       <group name="e2e">
-        <method signature="LoginTest.loginTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@59505b48]" name="loginTest" class="com.ui.testpackage.LoginTest"/>
+        <method signature="LoginTest.loginExcelDataProvider(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" name="loginExcelDataProvider" class="com.ui.testpackage.LoginTest"/>
       </group> <!-- e2e -->
     </groups>
-    <test started-at="2026-03-05T15:39:28 EST" name="Default test" finished-at="2026-03-05T15:39:40 EST" duration-ms="12064">
+    <test started-at="2026-03-06T12:03:19 EST" name="Default test" finished-at="2026-03-06T12:03:31 EST" duration-ms="11374">
       <class name="com.ui.testpackage.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@59505b48]" started-at="2026-03-05T15:39:28 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-05T15:39:31 EST" duration-ms="2763" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:20 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T12:03:22 EST" duration-ms="1992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@59505b48]" started-at="2026-03-05T15:39:31 EST" name="loginTest" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestCSVDataProvider" finished-at="2026-03-05T15:39:31 EST" duration-ms="286" status="PASS">
+        <test-method signature="loginExcelDataProvider(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:22 EST" name="loginExcelDataProvider" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestExcelDataProvider" finished-at="2026-03-06T12:03:22 EST" duration-ms="250" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,12 +27,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@59505b48]" started-at="2026-03-05T15:39:31 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-05T15:39:33 EST" duration-ms="1655" status="PASS">
+        </test-method> <!-- loginExcelDataProvider -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:22 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T12:03:23 EST" duration-ms="1370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@59505b48]" started-at="2026-03-05T15:39:33 EST" name="loginTest" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestCSVDataProvider" finished-at="2026-03-05T15:39:33 EST" duration-ms="315" status="PASS">
+        <test-method signature="loginExcelDataProvider(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:23 EST" name="loginExcelDataProvider" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestExcelDataProvider" finished-at="2026-03-06T12:03:24 EST" duration-ms="376" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,12 +42,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@59505b48]" started-at="2026-03-05T15:39:33 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-05T15:39:35 EST" duration-ms="1560" status="PASS">
+        </test-method> <!-- loginExcelDataProvider -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:24 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T12:03:25 EST" duration-ms="1573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@59505b48]" started-at="2026-03-05T15:39:35 EST" name="loginTest" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestCSVDataProvider" finished-at="2026-03-05T15:39:40 EST" duration-ms="5397" status="PASS">
+        <test-method signature="loginExcelDataProvider(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:25 EST" name="loginExcelDataProvider" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestExcelDataProvider" finished-at="2026-03-06T12:03:31 EST" duration-ms="5285" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,7 +57,7 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
+        </test-method> <!-- loginExcelDataProvider -->
       </class> <!-- com.ui.testpackage.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

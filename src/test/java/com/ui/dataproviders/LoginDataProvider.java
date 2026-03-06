@@ -14,6 +14,7 @@ import com.ui.pojo.Config;
 import com.ui.pojo.TestData;
 import com.ui.pojo.User;
 import com.utility.CSVReaderUtility;
+import com.utility.ExcelReaderUtility;
 
 
 public class LoginDataProvider {
@@ -49,5 +50,11 @@ public class LoginDataProvider {
 		
 	}
 	
+	@DataProvider(name = "LoginTestExcelDataProvider")
+	public static Iterator<User> loginExcelDataProvider() {
+		
+		return ExcelReaderUtility.excelReader("loginData.xlsx");
+		
+	}
 
 }
