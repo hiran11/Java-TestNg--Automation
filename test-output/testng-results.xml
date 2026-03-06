@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results retried="3" ignored="3" total="10" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-06T12:03:19 EST" name="Default suite" finished-at="2026-03-06T12:03:31 EST" duration-ms="11374">
+  <suite started-at="2026-03-06T16:59:20 EST" name="Default suite" finished-at="2026-03-06T16:59:41 EST" duration-ms="21540">
     <groups>
       <group name="sanity">
-        <method signature="LoginTest.loginExcelDataProvider(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" name="loginExcelDataProvider" class="com.ui.testpackage.LoginTest"/>
+        <method signature="LoginTest.loginCSVTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" name="loginCSVTest" class="com.ui.testpackage.LoginTest"/>
       </group> <!-- sanity -->
       <group name="e2e">
-        <method signature="LoginTest.loginExcelDataProvider(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" name="loginExcelDataProvider" class="com.ui.testpackage.LoginTest"/>
+        <method signature="LoginTest.loginCSVTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" name="loginCSVTest" class="com.ui.testpackage.LoginTest"/>
       </group> <!-- e2e -->
     </groups>
-    <test started-at="2026-03-06T12:03:19 EST" name="Default test" finished-at="2026-03-06T12:03:31 EST" duration-ms="11374">
+    <test started-at="2026-03-06T16:59:20 EST" name="Default test" finished-at="2026-03-06T16:59:41 EST" duration-ms="21540">
       <class name="com.ui.testpackage.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:20 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T12:03:22 EST" duration-ms="1992" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:20 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T16:59:22 EST" duration-ms="2484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginExcelDataProvider(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:22 EST" name="loginExcelDataProvider" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestExcelDataProvider" finished-at="2026-03-06T12:03:22 EST" duration-ms="250" status="PASS">
+        <test-method signature="loginCSVTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:22 EST" name="loginCSVTest" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestCSVDataProvider" finished-at="2026-03-06T16:59:23 EST" duration-ms="357" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,12 +27,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginExcelDataProvider -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:22 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T12:03:23 EST" duration-ms="1370" status="PASS">
+        </test-method> <!-- loginCSVTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:23 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T16:59:25 EST" duration-ms="1878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginExcelDataProvider(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:23 EST" name="loginExcelDataProvider" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestExcelDataProvider" finished-at="2026-03-06T12:03:24 EST" duration-ms="376" status="PASS">
+        <test-method signature="loginCSVTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:25 EST" name="loginCSVTest" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestCSVDataProvider" finished-at="2026-03-06T16:59:25 EST" duration-ms="378" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,12 +42,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginExcelDataProvider -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:24 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T12:03:25 EST" duration-ms="1573" status="PASS">
+        </test-method> <!-- loginCSVTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:25 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T16:59:27 EST" duration-ms="1565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginExcelDataProvider(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@a38c7fe]" started-at="2026-03-06T12:03:25 EST" name="loginExcelDataProvider" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestExcelDataProvider" finished-at="2026-03-06T12:03:31 EST" duration-ms="5285" status="PASS">
+        <test-method signature="loginCSVTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:27 EST" name="loginCSVTest" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestCSVDataProvider" finished-at="2026-03-06T16:59:32 EST" duration-ms="5437" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,7 +57,235 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginExcelDataProvider -->
+        </test-method> <!-- loginCSVTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:32 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T16:59:34 EST" duration-ms="2359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="loginCSVTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:34 EST" name="loginCSVTest" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestCSVDataProvider" finished-at="2026-03-06T16:59:35 EST" duration-ms="347" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [userName=standard_user1, password=secret_sauce]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected login to fail but it succeeded for user: standard_user1 did not expect [Swag Labs] but found [Swag Labs]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected login to fail but it succeeded for user: standard_user1 did not expect [Swag Labs] but found [Swag Labs]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failEquals(Assert.java:1582)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+at org.testng.Assert.assertNotEquals(Assert.java:2201)
+at com.ui.testpackage.LoginTest.loginCSVTest(LoginTest.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCSVTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:35 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T16:59:37 EST" duration-ms="1768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="loginCSVTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:37 EST" name="loginCSVTest" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestCSVDataProvider" finished-at="2026-03-06T16:59:37 EST" duration-ms="391" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [userName=standard_user1, password=secret_sauce]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected login to fail but it succeeded for user: standard_user1 did not expect [Swag Labs] but found [Swag Labs]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected login to fail but it succeeded for user: standard_user1 did not expect [Swag Labs] but found [Swag Labs]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failEquals(Assert.java:1582)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+at org.testng.Assert.assertNotEquals(Assert.java:2201)
+at com.ui.testpackage.LoginTest.loginCSVTest(LoginTest.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCSVTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:37 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T16:59:39 EST" duration-ms="1693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="loginCSVTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:39 EST" name="loginCSVTest" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestCSVDataProvider" finished-at="2026-03-06T16:59:39 EST" duration-ms="414" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [userName=standard_user1, password=secret_sauce]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected login to fail but it succeeded for user: standard_user1 did not expect [Swag Labs] but found [Swag Labs]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected login to fail but it succeeded for user: standard_user1 did not expect [Swag Labs] but found [Swag Labs]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failEquals(Assert.java:1582)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+at org.testng.Assert.assertNotEquals(Assert.java:2201)
+at com.ui.testpackage.LoginTest.loginCSVTest(LoginTest.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCSVTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:39 EST" name="setup" description=" Load the Homepage of the website" finished-at="2026-03-06T16:59:41 EST" duration-ms="2047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginCSVTest(com.ui.pojo.User)[pri:0, instance:com.ui.testpackage.LoginTest@5d534f5d]" started-at="2026-03-06T16:59:41 EST" name="loginCSVTest" description="Verifies with Valid user, is able to login into the application " data-provider="LoginTestCSVDataProvider" finished-at="2026-03-06T16:59:41 EST" duration-ms="325" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User [userName=standard_user1, password=secret_sauce]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected login to fail but it succeeded for user: standard_user1 did not expect [Swag Labs] but found [Swag Labs]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected login to fail but it succeeded for user: standard_user1 did not expect [Swag Labs] but found [Swag Labs]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failEquals(Assert.java:1582)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:157)
+at org.testng.Assert.assertNotEquals(Assert.java:2201)
+at com.ui.testpackage.LoginTest.loginCSVTest(LoginTest.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginCSVTest -->
       </class> <!-- com.ui.testpackage.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

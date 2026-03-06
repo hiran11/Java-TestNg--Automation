@@ -30,7 +30,7 @@ public class HomePage extends Browserutility {
     }
 
 
-    public MyAccountPage doLoginwith(String userName, String password) {
+    public MyAccountPage doLoginwith(String userName, String password,String expectedResult) {
     	
         enterText(USERNAME_LOCATOR, userName);
         enterText(PASSWORD_LOCATOR, password);

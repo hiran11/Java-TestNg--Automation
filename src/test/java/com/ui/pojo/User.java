@@ -6,17 +6,28 @@ public class User {
 	
 	private String userName;
 	private String password;
+	private String expectedResult;
+
 	
-	public User(String userName, String password) {
+	public User(String userName, String password,String expectedResult) {
 		super();
 		this.userName = userName;
 		this.password = password;
+		this.expectedResult = expectedResult;
 	}
 
 	public String getUserName() {
 		return userName;
 	}
 	
+	public String getExpectedResult() {
+		return expectedResult;
+	}
+
+	public void setExpectedResult(String expectedResult) {
+		this.expectedResult = expectedResult;
+	}
+
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}

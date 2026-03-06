@@ -1,4 +1,5 @@
-userName,password
-standard_user,secret_sauce
-visual_user,secret_sauce
-performance_glitch_user,secret_sauce
+userName,password,expectedResult
+standard_user,secret_sauce,PASS
+visual_user,secret_sauce,PASS
+performance_glitch_user,secret_sauce,PASS
+standard_user1,secret_sauce,FAIL

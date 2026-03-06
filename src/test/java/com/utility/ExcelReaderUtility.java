@@ -26,6 +26,7 @@ public class ExcelReaderUtility {
 		Row row ;
 		Cell userEName;
 		Cell userEpassword;
+		Cell userExpectedresult;
 		User user;
 		List<User> userList = new ArrayList<User>();
 		
@@ -44,9 +45,10 @@ public class ExcelReaderUtility {
 				row = rowIterator.next();
 				userEName = row.getCell(0);
 				userEpassword = row.getCell(1);
+				userExpectedresult = row.getCell(2);
 				System.out.println(userEName.toString());
 				System.out.println(userEpassword.toString());
-				user = new User(userEName.toString(),userEpassword.toString());// mapping data from excel to POJO class User
+				user = new User(userEName.toString(),userEpassword.toString(),userExpectedresult.toString());// mapping data from excel to POJO class User
 				userList.add(user);
 				                   	}
 		

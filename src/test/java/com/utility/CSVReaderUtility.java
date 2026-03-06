@@ -37,7 +37,7 @@ public static Iterator<User> readCSVFile(String fileName) {
 		userList = new ArrayList<User>();
 				
 		while((line= csvfileReader.readNext())!= null) {
-			User userData = new User(line[0],line[1]);
+			User userData = new User(line[0],line[1],line[2]);
 			userList.add(userData);
 		}
 		
