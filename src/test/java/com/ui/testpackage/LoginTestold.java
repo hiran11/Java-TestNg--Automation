@@ -29,7 +29,7 @@ public class LoginTestold {
 		
       //  String webText = homePage.doLoginwith("standard_user", "secret_sauce").getWebText();
       //  Assert.assertEquals(webText,"Swag Labs");
-		assertEquals(homePage.doLoginwith("standard_user", "secret_sauce").getWebText(),"Swag Labs");
+		assertEquals(homePage.doLoginwith("standard_user", "secret_sauce","PASS").getWebText(),"Swag Labs");
 	  
 
 	}

@@ -38,7 +38,7 @@ public class LoginTest {
 	      //  Assert.assertEquals(webText,"Swag Labs");
 		        // data passed directly without Testdata json	
 			    //  assertEquals(homePage.doLoginwith("standard_user", "secret_sauce").getWebText(),"Swag Labs");
-			    assertEquals(homePage.doLoginwith(user.getUserName(),user.getPassword()).getWebText(),"Swag Labs");
+			    assertEquals(homePage.doLoginwith(user.getUserName(),user.getPassword(),user.getExpectedResult()).getWebText(),"Swag Labs");
 			  
 		}
 	
