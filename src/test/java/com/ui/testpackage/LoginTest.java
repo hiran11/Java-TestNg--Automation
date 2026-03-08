@@ -98,13 +98,13 @@ public class LoginTest {
 		    if (user.getExpectedResult().equalsIgnoreCase("PASS")) {
 
 		        // Expect login to succeed
-		        Assert.assertEquals(actualText,"Swag Labs","Expected login to succeed but it failed for user: " + user.getUserName());
+		        Assert.assertEquals(actualText,"Swag Labs","Expected login to succeed and it suceeded for user: " + user.getUserName());
 		    }
 
 		    else if (user.getExpectedResult().equalsIgnoreCase("FAIL")) {
 
 		        // Expect login to fail
-		        Assert.assertNotEquals(actualText,"Swag Labs","Expected login to fail but it succeeded for user: " + user.getUserName());
+		        Assert.assertNotEquals(actualText,"Swag Labs","Expected login to fail and it failed for user: " + user.getUserName());
 		    }
 		}
 
