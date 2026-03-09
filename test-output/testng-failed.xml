@@ -6,7 +6,7 @@
       <class name="com.ui.testpackage.LoginTest">
         <methods>
           <include name="setup"/>
-          <include name="loginExcelDataProvider" invocation-numbers="3"/>
+          <include name="loginCSVTest" invocation-numbers="3"/>
         </methods>
       </class> <!-- com.ui.testpackage.LoginTest -->
     </classes>

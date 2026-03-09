@@ -26,7 +26,7 @@ public class HomePage extends Browserutility {
        // goToWebsite(PropertiesUtil.readProperty(Env.QA,"URL"));
        // goToWebsite(PropertiesUtil.readProperty(Env.QA,"URL"));
         //*************** JSON file calling
-        goToWebsite(JSONUtility.readJSON(Env.QA));
+        goToWebsite(JSONUtility.readJSON(Env.QA).getUrl());
     }
 
 

@@ -44,7 +44,7 @@ public class JSONUtility {
 
 	//}
 
-    public static String readJSON(Env env) {
+    public static Environment readJSON(Env env) {
 
         Gson gson = new Gson();
         File jsonfile = new File(System.getProperty("user.dir") + "\\config\\config.json");
@@ -62,7 +62,7 @@ public class JSONUtility {
                 throw new RuntimeException("Environment '" + envKey + "' not found in config.json");
             }
 
-            return environment.getUrl();
+            return environment;
 
         } catch (Exception e) {
             throw new RuntimeException("Failed to read config.json", e);
