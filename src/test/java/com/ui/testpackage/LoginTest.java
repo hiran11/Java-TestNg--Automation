@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import static org.testng.Assert.*;
 
+import org.apache.logging.log4j.core.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -15,10 +16,12 @@ import static com.constants.Browser.* ;
 import com.ui.pages.HomePage;
 import com.ui.pojo.User;
 import com.utility.Browserutility;
+import com.utility.LoggerUtility;
 
 
 public class LoginTest {
 		HomePage homePage;
+		Logger logger;
 		
 @BeforeMethod(description=" Load the Homepage of the website")	
 
@@ -58,7 +61,8 @@ public class LoginTest {
 	    if (user.getExpectedResult().equalsIgnoreCase("PASS")) {
 
 	        // Expect login to succeed
-	        Assert.assertEquals(actualText,"Swag Labs","Expected login to succeed but it failed for user: " + user.getUserName());
+	       // Assert.assertEquals(actualText,"Swag Labs","Expected login to succeed but it failed for user: " + user.getUserName());
+	    	Assert.assertEquals(actualText,"Swag Labs");
 	    }
 
 	    else if (user.getExpectedResult().equalsIgnoreCase("FAIL")) {
@@ -97,8 +101,15 @@ public class LoginTest {
 
 		    if (user.getExpectedResult().equalsIgnoreCase("PASS")) {
 
+		    	logger = LoggerUtility.getLoggerUtility(getClass());
+		    	
+		    	logger.info("The test case using Excel has started");
+		    	
 		        // Expect login to succeed
-		        Assert.assertEquals(actualText,"Swag Labs","Expected login to succeed and it suceeded for user: " + user.getUserName());
+		      //  Assert.assertEquals(actualText,"Swag Labs","Expected login to succeed and it suceeded for user: " + user.getUserName());
+		        Assert.assertEquals(actualText,"Swag Labs");
+		        
+		        logger.info("The test case using Excel has completed");
 		    }
 
 		  //  else if (user.getExpectedResult().equalsIgnoreCase("FAIL")) {
